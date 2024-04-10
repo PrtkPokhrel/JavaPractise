@@ -11,11 +11,9 @@ public class Car{
  public String brake(){
     return "The brake is pressed: ";
  }
+ public String repair(){
+     return "The repair is pressed: ";
+ }
+
 }
 
-// Class:
-// Blueprint
-// Object
-// Instance
-// Method
-// Attribute
