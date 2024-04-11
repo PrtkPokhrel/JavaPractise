@@ -1,22 +1,27 @@
-import javax.swing.JFrame;
-import javax.swing.ImageIcon;
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
+
 
 public class Main {
     public static void main(String[] args) {
-        JFrame frame = new JFrame(); // creates a frame
-        frame.setVisible(true); // make frame visible
-        frame.setSize(400, 400); // sets x dimension and y dimension of frame
-        frame.setTitle("This is the title"); // sets title of the frame
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Closes the application when exit is clicked
-        frame.setResizable(false); // prevent frame from being resized
+        JFrame frame = new JFrame();
 
-        ImageIcon img = new ImageIcon("porce.jpg");
-        frame.setIconImage(img.getImage()); // Sets the Icon image
-        // frame.getContentPane().setBackground(Color.green); //Sets the backgorund
-        // color of the frame
-        frame.getContentPane().setBackground(new Color(81, 1, 120)); // different way to set the background color
-          
+        frame.setVisible(true); //sets the visibility to be true
+
+        frame.setSize(500, 500); //sets height and width of the frame
+
+        frame.setTitle("Bank Management System"); //sets the  title of the frame
+
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //closes the program when clicked x
+
+        frame.setResizable(true); //cannot resize the windows if set to false
+
+        ImageIcon image = new ImageIcon("SwingPractise/porce.jpg"); //create an Image icon
+
+        frame.setIconImage(image.getImage()); //change the icon of the frame
+
+        frame.getContentPane().setBackground(Color.red);
+
 
     }
 }
