@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 
 public class Label {
@@ -13,6 +14,7 @@ public class Label {
         //labels
         JLabel label = new JLabel(); //Create a label object
 
+        Border border =BorderFactory.createLineBorder(Color.white,3); //for setting border
         ImageIcon image = new ImageIcon("SwingPractise/tree.jpg"); //Creating a image object using ImageIcon class
 
         label.setIcon(image); //sets the image in the window
@@ -32,6 +34,10 @@ public class Label {
         label.setBackground(Color.blue); //sets the background color
 
         label.setOpaque(true);  //it needs to be true inorder to set the background color
+
+        label.setBorder(border); //sets the border
+
+        
 
 
 
